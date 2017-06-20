@@ -65,6 +65,13 @@ table {
   border-top: none;
 }
 
+@media (max-width: 600px) {
+  .flex-content {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
 .half-width {
   width: 50%;
 }
@@ -211,4 +218,19 @@ table {
 .title {
   font-variant: small-caps;
   margin: 0;
+}
+
+@media (max-width: 600px) {
+  .title {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .title.carmine {
+    text-align: left;
+  }
+
+  .title.center {
+    text-align: center;
+  }
 }
